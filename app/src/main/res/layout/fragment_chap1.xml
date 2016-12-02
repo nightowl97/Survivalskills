@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="nodev.survivalskills.chap1Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/mock_text"/>
+            <ImageView
+                android:id="@+id/campfire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/campfire"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:onClick="goFullScreen"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mock_text"/>
+            <ImageView
+                android:id="@+id/morsecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/morsecode"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:onClick="goFullScreen"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Ambient light with head lamp"/>
+            <ImageView
+                android:paddingTop="5dp"
+                android:id="@+id/lamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lamp"
+                android:adjustViewBounds="true"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
